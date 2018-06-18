@@ -1,0 +1,61 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>UserView</servlet-name>
+    <servlet-class>com.javacourse.servlet.user.UserViewServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>UserCreate</servlet-name>
+    <servlet-class>com.javacourse.servlet.user.UserCreateServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>UserDelete</servlet-name>
+    <servlet-class>com.javacourse.servlet.user.UserDeleteServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>UserEdit</servlet-name>
+    <servlet-class>com.javacourse.servlet.user.UserEditServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ClinicServlet</servlet-name>
+    <servlet-class>com.javacourse.servlet.ClinicServlet</servlet-class>
+  </servlet>
+
+  <!-- Mapping -->
+
+  <servlet-mapping>
+    <servlet-name>UserView</servlet-name>
+    <url-pattern>/user/view</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UserCreate</servlet-name>
+    <url-pattern>/user/create</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UserDelete</servlet-name>
+    <url-pattern>/user/delete</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UserEdit</servlet-name>
+    <url-pattern>/user/edit</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ClinicServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
